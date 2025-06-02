@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad Electrica Digital: Aprende y Protege</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background: #333; color: white; text-align: center; padding: 1em; }
+        nav { background: #444; padding: 0.5em; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; }
+        .container { padding: 20px; max-width: 800px; margin: auto; background: white; }
+        h2 { color: #333; }
+        #contador { text-align: center; font-size: 18px; margin-top: 10px; }
+        #comentarios { margin-top: 20px; }
+        textarea { width: 100%; height: 100px; margin-top: 10px; }
+        button { background: #333; color: white; padding: 10px; border: none; cursor: pointer; }
+        .highlight { background-color: beige; padding: 10px; text-align: center; margin: 10px 0; }
+        .flex-container { display: flex; justify-content: space-between; gap: 10px; }
+        .highlight-box { background-color: beige; padding: 10px; width: 48%; text-align: center; }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body onload="actualizarContador()">
+    <header>
+        <h1>Seguridad Electrica Digital: Aprende y Protege</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#fundamentos">Fundamentos</a>
+        <a href="#riesgos">Riesgos</a>
+        <a href="#prevencion">Prevención</a>
+        <a href="#equipo">Equipo de Protección</a>
+        <a href="#conclusion">Conclusión</a>
+    </nav>
+    <div class="container">
+        <div id="contador">Visitas: <span id="visitas">0</span></div>
+        <section id="inicio">
+            <h2>Introducción</h2>
+            <p>En nuestra visita al taller de electricidad del colegio, realizamos una serie de actividades para concienciar a los estudiantes sobre la importancia de la seguridad eléctrica. Desde conceptos básicos hasta medidas de prevención, esta página resume lo que compartimos con ellos.</p>
+        </section>
+        <section id="seguridad-electrica">
+            <h2>¿Qué es la Seguridad Eléctrica?</h2>
+            <p>La Seguridad Eléctrica es la responsable de que esta energía se use bien, también se encarga de mantener los sistemas eléctricos (instalaciones eléctricas, cables, subestaciones) seguros para las personas y prevenir accidentes eléctricos.</p>
+        </section>
+        <section id="fundamentos">
+            <h2>Fundamentos Básicos de la Electricidad</h2>
+            <h3>¿Qué es la Electricidad?</h3>
+            <p>La electricidad es esencial en nuestra vida diaria, permitiéndonos usar luces, dispositivos y herramientas. Sin embargo, su mal uso puede causar accidentes graves como descargas eléctricas e incendios. En esta presentación, veremos los principios básicos de la electricidad, sus riesgos y cómo trabajar con ella de manera segura.</p>
+            <div class="highlight">
+                <p><strong>¿Qué es la corriente eléctrica?</strong><br>
+                Es el "flujo" de electricidad que pasa por los cables y hace que los dispositivos funcionen. Puede ser de dos tipos:</p>
+            </div>
+            <div class="flex-container">
+                <div class="highlight-box">
+                    <p><strong>Corriente Continua (DC)</strong></p>
+                    <p>Flujo de electrones en una sola dirección, como en baterías.</p>
+                    <img src="imagenes/corriente continua.png" alt="Corriente Continua" width="200">
+                </div>
+                <div class="highlight-box">
+                    <p><strong>Corriente Alterna (AC)</strong></p>
+                    <p>Flujo de electrones que cambia de dirección periódicamente, usada en hogares e industrias.</p>
+                    <img src="imagenes/corriente alterna.png" alt="Corriente Continua" width="200">
+                </div>
+            </div>
+            <h3>Ley de Ohm</h3>
+            <p>La ley de Ohm se usa para determinar la relación entre la diferencia de potencial (V), la corriente eléctrica (I) y la resistencia eléctrica (R), en un circuito eléctrico. Establece que la intensidad de la corriente eléctrica (I) que circula por un circuito eléctrico es directamente proporcional a la diferencia del potencial (V), que aplicamos entre los extremos del circuito eléctrico y es inversamente proporcional a la resistencia eléctrica (R) del conductor.</p>
+            <div class="flex-container">
+                <div class="highlight-box">
+                    <h3>¿Qué es Voltaje?</h3>
+                    <p>Es como la "fuerza" con la que la electricidad circula. Cuanto mayor es el voltaje, más energía tiene la corriente. Por ejemplo, un cargador de celular usa 5V, mientras que un enchufe de casa tiene 110V o 220V.</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>¿Qué es Resistencia?</h3>
+                    <p>Es la oposición al paso de la corriente. Algunos materiales dejan pasar la electricidad fácilmente (como los cables de cobre), mientras que otros la bloquean (como el plástico o la goma).</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+            <img src="imagenes/Ley-Ohm.jpg" alt="Ley de Ohm" width="200">
+            </div>
+        </section>
+        <section id="riesgos">
+            <h2>Principales Riesgos Eléctricos</h2>
+            <p>Trabajar con electricidad conlleva varios riesgos, entre ellos:</p>
+            <ul>
+                <li><strong>Contacto directo:</strong> Ocurre cuando una persona toca partes activas (cables pelados, terminales de breakers, bornes de motores) y recibe una descarga eléctrica.</li>
+                <li><strong>Contacto indirecto:</strong> Cuando una persona entra en contacto con partes de una instalación eléctrica que no están aisladas.</li>
+                <li><strong>Cortocircuitos:</strong> Ocurre cuando hay contacto directo entre conductores de diferente potencial, generando un flujo de corriente excesivo que 
+                 puede sobrecalentar los cables y causar incendios.</li>
+                <li><strong>Sobrecargas:</strong> Se da cuando se conectan más dispositivos de los que el sistema puede soportar, aumentando el consumo de corriente y generando calor excesivo</li>
+                <li><strong>Arco eléctrico:</strong> Es una descarga de alta temperatura causada por la ionizacion del aire entre dos conductores. Puede generar graves quemaduras y explosiones</li>
+            </ul>
+        </section>
+        <section id="prevencion">
+            <h2>Medidas de Prevención</h2>
+            <p>Para minimizar los riesgos eléctricos en el taller, se deben seguir estas medidas:</p>
+            <ul>
+                <li>Usar herramientas adecuadas y en buen estado.</li>
+                <li>Delimitar la zona de trabajo para evitar accidentes.</li>
+                <li>No trabajar con equipos eléctricos en ambientes húmedos.</li>
+                <li>Seguir las normas del RETIE (Reglamento Técnico de Instalaciones Eléctricas).</li>
+                <li>Identificar y señalizar correctamente los tableros eléctricos.</li>
+            </ul>
+        </section>
+        <section id="equipo">
+            <h2>Equipo de Protección Personal (EPP)</h2>
+            <p>El uso de equipo de protección es fundamental para garantizar la seguridad de los trabajadores. Los elementos básicos incluyen:</p>
+            <ul>
+                <li><strong>Botas dieléctricas:</strong> Protegen contra descargas eléctricas.</li>
+                <li><strong>Guantes aislantes:</strong> Evitan el contacto directo con la electricidad.</li>
+                <li><strong>Gafas de seguridad:</strong> Protegen contra partículas y destellos eléctricos.</li>
+                <li><strong>Casco dieléctrico:</strong> Protege la cabeza contra impactos y descargas.</li>
+                <li><strong>Ropa ignífuga:</strong> Resistente a chispas y llamas.</li>
+            </ul>
+            <div style="text-align: center;">
+            <img src="imagenes/EPP.jpg" alt="Implementos de seguridad" width="300">
+            
+        </section>
+        <section id="protecciones">
+            <h2>Protecciones Eléctricas en Instalaciones Domésticas</h2>
+
+            <h3>¿Por qué son necesarias las protecciones eléctricas?</h3>
+            <ul>
+                <li>Protegen a las personas, equipos y estructuras</li>
+                <li>Previenen incendios y descargas eléctricas</li>
+                <li>Garantizan el buen funcionamiento de la instalación eléctrica</li>
+           </ul>
+
+           <h3>Tipos de fallas eléctricas</h3>
+           </ul>
+                <li>Cortocircuito: contacto directo entre fase y neutro o fase y tierra</li>
+                <li>Sobrecarga: se conectan mas equipos de los que la instalacion puede soportar</li>
+                <li>Fuga de corriente: corriente se desvia fuera del circuito (riesgo para personas)</li>
+           </ul>
+
+           <h3>Protecciones contra sobretensiones</h3>
+           </ul>
+                <li>Se colocan en el tablero o en enchufes especiales</li>
+                <li>Protegen electrodomesticos de picos por rayos o fallas</li>
+                <li>Ejemplos: pararrayos, supresores de picos.</li>
+           </ul>
+
+            <h3>¿Qué es un breaker?</h3>
+           </ul>
+                <li>Dispositivo automaticos que interrumpe el paso de la corriente.</li>
+                <li>Evita daños por sobrecarga o cortocircuito.</li>
+                <li>Tambien llamado interruptor termomagnetico.</li>
+           </ul>
+                <div style="text-align: center;">
+                <img src="imagenes/breaker.jpg" alt="Imagen de breaker" style="max-width: 50%; height: auto;">
+                </div>
+                
+                
+            <h3>Tipos de breakers</h3>
+           </ul>
+                <li>Termomagneticos: Protege contra sobrecarga y cortocircuito.</li>
+                <li>Diferencial (rcd o disyuntor): Detecta fugas de corriente.</li>
+                <li>Combinado: Une proteccion térmica + diferencial.</li>
+           </ul>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                <img src="imagenes/magnetotermico.jpg" alt="Breaker Izquierda" style="width: 45%; height: auto;">
+                <img src="imagenes/diferencial1.jpg" alt="Breaker Derecha" style="width: 35%; height: auto;">
+           </div> 
+
+           <h3>Cómo funciona un breaker</h3>
+
+           <div>
+           <p>Un breaker o interruptor automático tiene dos mecanismos principales que detectan y actúan ante fallas:</p>
+           </div>
+
+            <div class="flex-container">
+                <div class="highlight-box">
+                    <h3>1. Protección térmica (contra sobrecargas)</h3>
+                    <p>El breaker tiene una lámina bimetálica interna.</p>
+                    <p>Cuando circula más corriente de la que debería (sobrecarga), la lámina se calienta y se deforma.</p>
+                    <p>Al deformarse, desconecta el circuito, interrumpiendo el paso de la electricidad.</p>
+                    <p>Este proceso no es instantáneo, se demora unos segundos, porque permite pequeñas sobrecargas momentáneas (como cuando enciendes un motor).</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>2. Protección magnética (contra cortocircuitos)</h3>
+                    <p>Si ocurre un cortocircuito, la corriente sube de forma repentina y muy alta.</p>
+                    <p>Esto activa un electroimán dentro del breaker.</p>
+                    <p>El campo magnético generado empuja un mecanismo que abre de inmediato el interruptor (en milisegundos).</p>
+                    <p>Evita que esa corriente extrema dañe los cables o cause incendios.</p>
+                </div>
+            </div>
+
+            <h3>Selección adecuada de breakers</h3>
+            <div>
+                 <p>Elegir la capacidad correcta segun:</p>
+            </div>
+            </ul>
+                <li>Calibre del cable</li>
+                <li>Carga del circuito</li>
+                <li>Uso del area (iluminacion, tomas, electrodomesticos)</li>
+                <li>No usar breakers sobredimensionados</li>
+           </ul>
+           <div style="text-align: center;">
+                <img src="imagenes/tabla1.jpg" alt="Tabla para la seleccion de breaker segun la carga estimada" style="max-width: 60%; height: auto;">
+                </div>
+
+        </section>
+
+        </section>
+         <h2>Diagramas unifilares</h2>
+<div style="display: flex; background-color: beige; padding: 20px; border-radius: 10px; align-items: center;">
+    <!-- Columna de texto -->
+    <div style="flex: 1;">
+        <h3>¿Qué es un diagrama unifilar?</h3>
+        <ul>
+            <li>Es una representación gráfica simplificada de un sistema eléctrico.</li>
+            <li>Muestra el recorrido de la energía desde la fuente hasta las cargas.</li>
+            <li>Utiliza líneas simples y símbolos eléctricos para representar equipos y conexiones.</li>
+        </ul>
+    </div>
+
+    <!-- Columna de imagen -->
+    <div style="flex: 1; text-align: center;">
+        <img src="imagenes/DIATITULO.jpg" alt="Diagrama unifilar" style="max-width: 100%; height: auto;">
+    </div>
+</div>
+           <h3>Importancia del diagrama unifilar:</h3>
+           </ul>
+                <li>Facilita la comprension del sistema eléctrico.</li>
+                <li>Útil para mantenimiento, diseño, inspección y análisis de fallas.</li>
+                <li>Requisito en instalaciones eléctricas según reglamentos y normativas (RETIE, NEC, etc.).</li>
+           </ul>
+           
+           <h3>Tips para leer un diagrama unifilar</h3>
+           </ul>
+                <li>Identifica la fuente de energía (ej. transformador, red pública).</li>
+                <li>Sigue el flujo de energía de arriba hacia abajo o de izquierda a derecha.</li>
+                <li>Reconoce los símbolos: interruptores, protecciones, conductores, cargas.</li>
+                <li>Verifica niveles de tensión y capacidad.</li>
+                <li>Observa derivaciones a subpaneles o circuitos ramales.</li>
+           </ul>
+
+           <h3>Simbologia de algunos elementos utilizados en diagramas unifilares</h3>
+             
+           <div style="display: flex; flex-direction: column; gap: 20px;">
+
+           <div style="background-color: beige; padding: 15px; border-radius: 10px; text-align: center;">
+           <img src="imagenes/DIAGRAMA1.jpg" alt="Imagen 1" style="max-width: 50%; height: auto;">
+           </div>
+           
+           <div style="background-color: beige; padding: 15px; border-radius: 10px; text-align: center;">
+           <img src="imagenes/SIMBOLOGIA.jpg" alt="Imagen 2" style="max-width: 50%; height: auto;">
+           </div>
+
+           <div style="background-color: beige; padding: 15px; border-radius: 10px; text-align: center;">
+           <img src="imagenes/SIMBOLOGIA2.jpg" alt="Imagen 3" style="max-width: 100%; height: auto;">
+           </div>
+           
+           <div style="background-color: beige; padding: 15px; border-radius: 10px; text-align: center;">
+           <img src="imagenes/SIMBOLOGIA3.jpg" alt="Imagen 4" style="max-width: 100%; height: auto;">
+           </div> 
+           
+           </div>
+ 
+           </section>
+
+           </section>
+           <h2>Cuadro de cargas</h2>
+
+           <div style="display: flex; background-color: beige; padding: 20px; border-radius: 10px; align-items: center;">
+               <div style="flex: 1;">
+           <h3>Que es un cuadro de cargas</h3>
+                 <ul>
+                      <li>Es una tabla donde se detallan todas las cargas eléctricas conectadas a un sistema.</li>
+                      <li>Incluye tipo de carga, potencia, cantidad, factor de demanda y corriente.</li>
+                      <li>Permite dimensionar los conductores y protecciones.</li>
+                 </ul>
+           </div>
+
+           <div style="flex: 1; text-align: center;">
+           <img src="imagenes/cuadro.jpg" alt="Diagrama unifilar" style="max-width: 100%; height: auto;">
+           </div>
+           </div>
+                
+           <h3>Como se hace un cuadro de cargas:</h3>
+
+           </ul>
+                <li>Lista de cargas: iluminación, tomas, electrodomésticos, etc.</li>
+                <li>Potencia de cada carga: en vatios (W) o kilovatios (kW).</li>
+                <li>Cantidad de elementos similares.</li>
+                <li>Factor de demanda (según tipo de carga y normativa).</li>
+                <li>Potencia demandada total.</li>
+                <li>Cálculo de la corriente:</li>
+           </ul>
+           
+                <p>
+                   \( I = \frac{P}{V \cdot \cos(\phi)} \)
+               </p>
+
+                <p>
+                   Donde:<br>
+                             \( P \): potencia total en W<br>
+                             \( V \): voltaje (ej. 120V o 240V)<br>
+                             \( \cos(\phi) \): factor de potencia (si aplica)
+                </p>
+
+           <h3>Calculo de la proteccion</h3>
+               <p>Ahora teniendo encuenta que es un cuadro de cargas queremos hacer un pequeño ejemplo de como utilizando la informacion que nos brinda un cuadro de cargas podemos tambien calcular la proteccion que debemos utilizar en nuestra instalacion domestica o industrial</p>
+           <h3>Calculo del breaker</h3>
+           </ul>
+                <li>Usa la corriente calculada y agrega un margen de seguridad del 1.25.</li>
+           </ul>
+                 <p>
+                    \( I_{\text{breaker}} = I_{\text{carga}} \times 1.25 \)
+                </p>
+           <p>Selecciona el breaker comercial teniendo en cuenta la corriente calculada. Además, si el valor obtenido no se encuentra en la lista del fabricante, se puede aproximar al valor comercial más cercano, pero sin excederlo demasiado, ya que la idea no es sobredimensionar el breaker.</p> 
+              <p>Ejemplo:</p>
+           </ul>
+                <li>Potencia total: 3500 W</li>
+                <li>Voltaje: 120 V (BT)</li>
+                <li>\(I = \frac{3500W}{120V} = 29.17 A \)</li>
+                <li>\( I_{\text{breaker}} = 29.17A \times 1.25 =36.46A \) </li>
+                <li>Dado que en la lista de fabricantes como ABB, Siemens, Schneider, entre otros, no se encuentra un breaker de 36.46 A, se procede a seleccionar uno con un valor superior, en este caso, un breaker de 40 A.</li>
+           </ul>
+        </section>
+        
+        </section>
+        <section id="comentarios">
+            <h2>Deja tu comentario</h2>
+            <textarea id="mensaje" placeholder="Escribe tu pregunta o comentario..."></textarea>
+            <button onclick="enviarComentario()">Enviar</button>
+            <div id="listaComentarios"></div>
+        </section>
+    </div>
+    <script>
+        function actualizarContador() {
+            let visitas = localStorage.getItem("contadorVisitas") || 0;
+            visitas++;
+            localStorage.setItem("contadorVisitas", visitas);
+            document.getElementById("visitas").innerText = visitas;
+        }
+        function enviarComentario() {
+            let mensaje = document.getElementById("mensaje").value;
+            if (mensaje.trim() !== "") {
+                let lista = document.getElementById("listaComentarios");
+                let nuevoComentario = document.createElement("p");
+                nuevoComentario.textContent = mensaje;
+                lista.appendChild(nuevoComentario);
+                document.getElementById("mensaje").value = "";
+            }
+        }
+    </script>
+</body>
+</html>
